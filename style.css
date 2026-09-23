@@ -18,7 +18,8 @@ body{
 .nav-icon img{
     height: 4rem;
     width: 3rem;
-    margin-left: 2rem;
+   margin-left: -5rem;
+   align-items: center;
 }
 
 nav{
@@ -26,12 +27,13 @@ nav{
     justify-content: space-between;
     background-color: #1c2833;
     align-items: center;
-    padding: 0 0 0 0.7rem;
+    padding: 0 clamp(15px, 5vw,80px);
     height: 4.5rem;
 }
 
 nav ul{
     display: flex;
+    justify-content: space-between;
    
 }
 
@@ -54,4 +56,30 @@ nav ul li a:hover, nav ul li a.active{
     background-color: #566773;
     border-radius: 0.5rem;
 }
+
+/* Navbar responsive start here */
+
+@media only screen and (max-width:940px){
+
+    
+
+    nav ul{
+        position: fixed;
+        top: 4.5rem;
+        left: 0;
+        height: calc(100dvh - 4.5rem);
+        width: 100%;
+        background-color: #000;
+        flex-direction: column;
+        text-align: center;
+        padding: 4rem 0;
+
+    }
+
+    nav ul li
+
+    
+}
+
+/* Here end the responsive of the nav bar */
 
