@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -17,11 +17,15 @@
 
     <nav>
 
-        <label for=""></label>
+        <input type="checkbox" id="click" >
+
+        <div class="nav-icon">
+
+             <img src="Image/toxic.png">
+
+        </div>
         
-            <div class="nav-icon">
-                <img src="Image/toxic.png" alt="">
-            </div>
+           
                 
 
             <ul>
@@ -31,8 +35,51 @@
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Sign Up</a></li>                 
             </ul>
+
+            <label for="click" class="menu-btn">
+                <i class="fa-solid fa-bars" id="open"></i>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </label>          
         
     </nav>
+
+    <header>
+
+        <div class="welcome">
+
+            <p>Welcome to our website</p>
+
+        </div>
+
+        <div class="single-slider-box">
+
+            <div class="single-track">
+
+                <div class="single-slide"><img src="Image/computer.jpg" alt=""></div>
+                <div class="single-slide"><img src="Image/mad.png" alt=""></div>
+                <div class="single-slide"><img src="Image/nuclear.png" alt=""></div>
+                <div class="single-slide"><img src="Image/woman.png" alt=""></div>
+
+                <!-- same img -->
+
+                <div class="single-slide"><img src="Image/computer.jpg" alt=""></div>
+                <div class="single-slide"><img src="Image/mad.png" alt=""></div>
+                <div class="single-slide"><img src="Image/nuclear.png" alt=""></div>
+                <div class="single-slide"><img src="Image/woman.png" alt=""></div>
+
+            </div>
+
+        </div>
+
+        <div class="web-welcome">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati error corporis ea et aspernatur placeat magni natus dolores quae eius! Odio magni rerum impedit distinctio maiores delectus quas vero tempora.
+            </p>
+        </div>
+
+    </header>
+
+
     
 </body>
 </html>
