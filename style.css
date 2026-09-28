@@ -29,8 +29,12 @@ nav{
     justify-content: space-between;
     background-color: #1c2833;
     align-items: center;
+    z-index: 9999;
     padding: 0 clamp(15px, 5vw,80px);
     height: 4.5rem;
+    position: sticky;
+    top: 0;
+    right: 0;
     
 }
 
@@ -141,6 +145,7 @@ nav ul li a:hover, nav ul li a.active{
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
+    text-transform: capitalize;
     background: linear-gradient(to right , black,#ffa,#444,#1c2833);
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -158,8 +163,7 @@ nav ul li a:hover, nav ul li a.active{
     margin: 50px auto;
     overflow: hidden;
     background: #fff;
-    border-radius: 12px;
-    border: 1px solid #ddd;
+    outline: none;
     display: flex;
     align-items: center;
 }
@@ -212,6 +216,40 @@ nav ul li a:hover, nav ul li a.active{
 }
 .web-welcome p{
     font-size: 19px;
-    text-align: center;
+    text-align: center; 
+    text-transform: capitalize;
+
     
 }
+
+.button-parent{
+    text-align: center;
+}
+#Know-More{
+
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    color: #444;
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 0.28em ;
+    align-items: center;
+    text-align: center;  
+    transition: 0.5s;
+    
+}
+
+#Know-More:hover{
+    transform: translatey(-2px);
+    background: linear-gradient(135deg, #0f0c29 , #302b63 , #24243e, #c9a45c);
+    color: #fff;
+}
+
+ /* Here end the header section  */
+
+ @media screen {
+    
+ }
